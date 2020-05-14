@@ -25,6 +25,7 @@ public class HienThiCacLoaiHinh {
                     PrintTheSquareTriangle();
                     break;
                 case 3:
+                    PrintIsoscelesTriangle();
                     break;
                 case 4:
                     System.exit(4);
@@ -85,6 +86,8 @@ public class HienThiCacLoaiHinh {
             }
         }
     }
+
+
     private static void PrintTheSquareTriangleTopLeft(){
         Scanner input=new Scanner(System.in);
         int height,width;
@@ -98,7 +101,11 @@ public class HienThiCacLoaiHinh {
             run--;
             System.out.println();
         }
+        input.nextLine();
+        input.nextLine();
     }
+
+
     private static void PrintTheSquareTriangleBottonLeft(){
         Scanner input=new Scanner(System.in);
         int height,width;
@@ -112,7 +119,11 @@ public class HienThiCacLoaiHinh {
             run++;
             System.out.println();
         }
+        input.nextLine();
+        input.nextLine();
     }
+
+
     private static void PrintTheSquareTriangleTopRight(){
         Scanner input=new Scanner(System.in);
         int height,width;
@@ -131,6 +142,8 @@ public class HienThiCacLoaiHinh {
             space++;
             System.out.println();
         }
+        input.nextLine();
+        input.nextLine();
     }
 
 
@@ -153,6 +166,8 @@ public class HienThiCacLoaiHinh {
             space--;
             System.out.println();
         }
+        input.nextLine();
+        input.nextLine();
     }
 
     private static void PrintIsoscelesTriangle(){
@@ -162,7 +177,7 @@ public class HienThiCacLoaiHinh {
         height = input.nextInt();
         width=height*2;
         int run = 1;
-        int space = height-run;
+        int space = height-1;
         for (int i = 0; i < height; i++) {
             for (int a = 0; a < space; a++) {
                 System.out.print("   ");
@@ -171,10 +186,12 @@ public class HienThiCacLoaiHinh {
                 System.out.print("*  ");
             }
 
-            run++;
+            run=run+2;
             space--;
             System.out.println();
         }
+        input.nextLine();
+        input.nextLine();
     }
 
 }
