@@ -1,4 +1,4 @@
-package B3_KeThua.ThucHanh.HeCacDoiTuongHinhHoc;
+package B4_KeThua.ThucHanh.HeCacDoiTuongHinhHoc;
 
 public class Rectangle extends Shape {
     private double width;
